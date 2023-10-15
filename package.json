@@ -1,5 +1,5 @@
 {
-    "version": "0.0.4",
+    "version": "0.0.5",
     "name": "tailwindcss-plugin-debug-screens",
     "private": false,
     "description": "Plugin to display the currently active CSS breakpoint on the screen.",
@@ -15,9 +15,11 @@
         "dist/plugin",
         "tailwind"
     ],
-    "import": "./dist/plugin/index.mjs",
-    "require": "./dist/plugin/index.js",
     "types": "./dist/plugin/index.d.ts",
+    "exports": {
+        "import": "./dist/plugin/index.js",
+        "require": "./dist/plugin/index.mjs"
+    },
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
