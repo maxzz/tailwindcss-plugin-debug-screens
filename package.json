@@ -1,0 +1,17 @@
+{
+    "name": "tailwindcss-plugin-debug-screens",
+    "version": "0.0.1",
+    "description": "Plugin to display the currently active CSS breakpoint on the screen.",
+    "main": "index.js",
+    "author": "Max Zakharzhevskiy",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/maxzz/tailwindcss-plugin-debug-screens.git"
+    },
+    "homepage": "https://github.com/maxzz/tailwindcss-plugin-debug-screens",
+    "bugs": "https://github.com/maxzz/tailwindcss-plugin-debug-screens/issues",
+    "peerDependencies": {
+        "tailwindcss": "^1.0 || ^2.0 || ^3.0"
+    }
+}
