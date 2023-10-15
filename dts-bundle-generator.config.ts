@@ -3,7 +3,7 @@ module.exports = {
         {
             filePath: "./tailwind/tailwind-plugin-debug-screens.ts",
             outFile: `./dist/plugin/index.d.ts`,
-            noCheck: false,
+            noCheck: true,
         },
     ],
 };

@@ -1,7 +1,7 @@
 {
+    "version": "0.0.4",
     "name": "tailwindcss-plugin-debug-screens",
-    "private": true,
-    "version": "0.0.1",
+    "private": false,
     "description": "Plugin to display the currently active CSS breakpoint on the screen.",
     "homepage": "https://maxzz.github.io/tailwindcss-plugin-debug-screens",
     "repository": {
@@ -15,9 +15,9 @@
         "dist/plugin",
         "tailwind"
     ],
-    "module": "./dist/plugin/index.mjs",
+    "import": "./dist/plugin/index.mjs",
     "require": "./dist/plugin/index.js",
-    "types": "./dist/plugin/types/index.d.ts",
+    "types": "./dist/plugin/index.d.ts",
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
@@ -37,8 +37,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "tsc && vite build && dts-bundle-generator --config ./dts-bundle-generator.config.ts",
+        "build": "tsc && vite build && dts-bundle-generator --silent --config ./dts-bundle-generator.config.ts",
         "preview": "vite preview",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d dist",
+        "npm": "pnpm publish --no-git-checks"
     }
 }

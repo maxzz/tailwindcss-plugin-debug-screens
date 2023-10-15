@@ -11,7 +11,7 @@ export default defineConfig({
             entry: resolve(__dirname, 'tailwind/tailwind-plugin-debug-screens.ts'),
             name: 'react-tailwindcss-debug-screens',
             formats: ['es', 'cjs'],
-            fileName: (format) => `plugin/index.${format}.${format === 'es' ? 'm' : ''}js`,
+            fileName: (format) => `plugin/index.${format === 'es' ? 'm' : ''}js`,
         },
         minify: false,
         rollupOptions: {
