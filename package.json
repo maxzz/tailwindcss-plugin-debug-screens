@@ -39,7 +39,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "tsc && vite build && dts-bundle-generator --silent --config ./dts-bundle-generator.config.ts",
+        "build": "tsc && vite build",
+        "build-lib": "tsc && vite build -c vite.config.lib.ts && dts-bundle-generator --silent --config ./dts-bundle-generator.config.ts",
         "preview": "vite preview",
         "deploy": "gh-pages -d dist",
         "npm": "pnpm publish --no-git-checks"
